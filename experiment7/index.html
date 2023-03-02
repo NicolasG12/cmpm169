@@ -1,14 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Chart.js example</title>
-  </head>
-  <body>
-    <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
-    <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- <script type="module" src="dimensions.js"></script> -->
-    <script type="module" src="./js/acquisitions.js"></script>
-  </body>
+<head>
+  <title>Chart.js example</title>
+
+  <!-- Load jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <!-- Load p5.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+</head>
+
+<body>
+  <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
+  <div style="width: 800px;"><canvas id="myChart"></canvas></div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- <script src="./js/api.js"></script> -->
+  <script type="module" src="./js/sketch.js"></script>
+    <button onClick="window.location.reload();">Get new season!</button>
+  <div class="gameDetails"><span id="game"></span></div>
+
+
+</body>
+
 </html>
